@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Kalupa – Laboratorio Digital | Estrategia, Desarrollo Web & Branding</title>
+    <meta name="title" content="Kalupa – Laboratorio Digital | Estrategia, Desarrollo Web & Branding">
+    <meta name="description"
+        content="Convertimos la incertidumbre en dirección. Laboratorio Digital especializado en Asesoría 1:1, Desarrollo Web, Redes Sociales, Meta Ads y Papelería Corporativa.">
+    <link rel="canonical" href="https://kalupa.cl/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kalupa.cl/">
+    <meta property="og:title" content="Kalupa – Laboratorio Digital">
+    <meta property="og:description"
+        content="De la improvisación a la estrategia. Desarrollo Web, Redes Sociales, Meta Ads y Branding para marcas que buscan crecimiento real.">
+    <meta property="og:image" content="https://kalupa.cl/assets/logo.svg">
+    <meta property="og:site_name" content="Kalupa – Laboratorio Digital">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Kalupa – Laboratorio Digital",
+      "url": "https://kalupa.cl",
+      "logo": "https://kalupa.cl/assets/logo.svg",
+      "image": "https://kalupa.cl/assets/logo.svg",
+      "description": "Estrategia digital, desarrollo web y branding para empresas en crecimiento.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Montaña 770",
+        "addressLocality": "Viña del Mar",
+        "addressRegion": "Valparaíso",
+        "addressCountry": "CL"
+      },
+      "telephone": "+56946217905"
+    }
+    </script>
+
+    <!-- Three.js 3D Engine -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="Kalupa Logo" class="logo-img" onerror="this.style.display='none'">
+                <div class="logo-text-group">
+                    <span class="logo-brand">KALUPA</span>
+                    <span class="logo-descriptor">LABORATORIO DIGITAL</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#diagnostico">Diagnóstico</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#manifiesto">Compromiso</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="https://wa.me/56946217905?text=Hola%20Kalupa,%20quiero%20agendar%20una%20Asesor%C3%ADa" target="_blank" class="btn btn-purple nav-cta">AGENDAR ASESORÍA</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section con 3D Canvas Metábolas / Partículas Fluidas & Video -->
+    <section id="inicio" class="hero">
+        <canvas id="hero-canvas" class="hero-canvas-bg"></canvas>
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="assets/cover.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge badge-purple">Tu Socio Estratégico</span>
+            <h1 class="hero-title">DE LA IMPROVISACIÓN<br>A LA <span class="text-purple-bold">ESTRATEGIA.</span></h1>
+            <p class="hero-subtitle">Transformamos la duda en dirección, el estancamiento en avance y tu esfuerzo en resultados reales.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/56946217905?text=Hola%20Kalupa,%20quiero%20solicitar%20un%20diagn%C3%B3stico%20de%20mi%20marca" target="_blank" class="btn btn-purple btn-lg">Solicitar Diagnóstico</a>
+                <a href="#servicios" class="btn btn-outline btn-lg">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulo de Diagnóstico / Insight Clave -->
+    <section id="diagnostico" class="diagnostico section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-yellow">¿TE IDENTIFICAS CON ESTO?</span>
+                <h2>¿SIENTES QUE TU MARCA ESTÁ ESTANCADA?</h2>
+                <p class="section-tagline">"Haces mucho, pero avanzas poco. Sabes que lo que ofreces tiene valor, pero tu marca no lo está reflejando."</p>
+            </div>
+
+            <div class="diagnostico-grid">
+                <div class="diagnostico-card glass-panel highlight-purple">
+                    <div class="card-tag">El Problema Real</div>
+                    <h3>DESORDEN EN LA ESTRATEGIA + EJECUCIÓN SIN PLAN</h3>
+                    <p>No es que tu producto o servicio no sea bueno. Es no saber exactamente por qué las ventas se frenan a pesar de todo tu esfuerzo diario.</p>
+                </div>
+
+                <div class="diagnostico-card glass-panel">
+                    <div class="card-tag">Lo que vives hoy</div>
+                    <ul class="check-list error-list">
+                        <li>Publicas en redes sin saber si realmente te traerá clientes.</li>
+                        <li>Sientes que tu marca se ve poco profesional o inconsistente.</li>
+                        <li>Ventas irregulares y dudas al momento de ofrecer lo que haces.</li>
+                        <li>Sensación de estar estancado probando consejos genéricos que no funcionan.</li>
+                    </ul>
+                </div>
+
+                <!-- Caja: Lo que logras con nosotros -->
+                <div class="diagnostico-card glass-panel highlight-yellow">
+                    <div class="card-tag">Lo que logras con nosotros</div>
+                    <ul class="check-list success-list">
+                        <li><strong>Dirección:</strong> Analizamos contigo la raíz de tu negocio.</li>
+                        <li><strong>Orden:</strong> Un plan claro para comunicarte y vender con confianza.</li>
+                        <li><strong>Claridad:</strong> Sabes qué hacer, por qué lo haces y a quién le hablas.</li>
+                        <li><strong>Resultados:</strong> Tu valor se transmite con fuerza y generas ventas reales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios (Ubicada INMEDIATAMENTE después de "Lo que logras con nosotros") -->
+    <section id="servicios" class="services section-padding bg-darker">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <span class="badge badge-purple">NUESTRAS SOLUCIONES</span>
+            </div>
+
+            <div class="services-overview-grid">
+                <!-- Card 1 -->
+                <div class="service-overview-card glass-panel highlight-purple">
+                    <span class="badge badge-purple">SERVICIO 01</span>
+                    <h3>ASESORÍA PUBLICITARIA O WEB</h3>
+                    <p class="service-summary">Una sesión online personalizada de 60 minutos para poner claridad a tu marca, resolver tus dudas y definir un mapa de acción concreto para avanzar con dirección.</p>
+                    <div class="overview-price">$20.000 <span class="font-sm font-normal text-muted">(Inversión única)</span></div>
+                    <a href="asesoria-1-1.html" class="btn btn-purple btn-block">Ver Detalles de la Asesoría →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-overview-card glass-panel highlight-purple">
+                    <span class="badge badge-purple">SERVICIO 02</span>
+                    <h3>DESARROLLO WEB ESTRATÉGICO</h3>
+                    <p class="service-summary">Tu mejor vendedor trabajando las 24 horas. Desde sitios informativos One Page hasta plataformas avanzadas con reservas y comercio electrónico.</p>
+                    <div class="overview-price">
+                        Desde $99.000 
+                        <span class="badge badge-yellow font-sm">★ MÁS RECOMENDADO</span>
+                    </div>
+                    <a href="desarrollo-web.html" class="btn btn-purple btn-block">Ver Planes Web Completos →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-overview-card glass-panel highlight-purple">
+                    <span class="badge badge-purple">SERVICIO 03</span>
+                    <h3>PUBLICIDAD & REDES SOCIALES</h3>
+                    <p class="service-summary">Gestión estratégica de tu comunicación para dejar de publicar a ciegas y atraer clientes reales con consistencia y sentido.</p>
+                    <div class="overview-price">Desde $130.000 <span class="font-sm font-normal text-muted">/ mes</span></div>
+                    <a href="publicidad-y-redes.html" class="btn btn-purple btn-block">Ver Planes de Redes →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-overview-card glass-panel highlight-purple">
+                    <span class="badge badge-purple">SERVICIO 04</span>
+                    <h3>CAMPAÑAS ADS (META ADS)</h3>
+                    <p class="service-summary">Publicidad en Facebook e Instagram segmentada y orientada a resultados concretos, optimizando cada peso de tu presupuesto.</p>
+                    <div class="overview-price">Desde $90.000</div>
+                    <a href="campanas-ads.html" class="btn btn-purple btn-block">Ver Detalles Meta Ads →</a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-overview-card glass-panel highlight-purple">
+                    <span class="badge badge-purple">SERVICIO 05</span>
+                    <h3>PAPELERÍA & BRANDING</h3>
+                    <p class="service-summary">Hacemos que tu marca se vea tan sólida y profesional en el mundo físico como en el digital: tarjetas, carpetas, flyers, pendones y más.</p>
+                    <div class="overview-price" style="font-size: 1.25rem;">Archivos impresos.</div>
+                    <a href="papeleria-y-branding.html" class="btn btn-purple btn-block">Ver Catálogo Físico →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifiesto Section (Solo texto NUESTRO COMPROMISO) -->
+    <section id="manifiesto" class="manifiesto section-padding">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2.5rem;">
+                <span class="badge badge-purple">NUESTRO COMPROMISO</span>
+                <p class="section-quote mt-3">"No necesitas improvisar, necesitas saber qué estás haciendo, por qué y para quién."</p>
+            </div>
+
+            <div class="manifiesto-grid">
+                <div class="manifiesto-item glass-panel">
+                    <span class="item-number">01</span>
+                    <h3>Si no hay diagnóstico, no hay estrategia</h3>
+                    <p>Primero escuchamos y entendemos tu negocio. No te propondremos nada a ciegas sin saber qué necesitas solucionar.</p>
+                </div>
+                <div class="manifiesto-item glass-panel">
+                    <span class="item-number">02</span>
+                    <h3>NO HACEMOS MARKETING. HACEMOS PUBLICIDAD.</h3>
+                    <p>No creemos en recetas mágicas ni en trucos rápidos. Construimos soluciones reales, con criterio y enfocadas en tu crecimiento.</p>
+                </div>
+                <div class="manifiesto-item glass-panel">
+                    <span class="item-number">03</span>
+                    <h3>Estrategia real para resultados reales</h3>
+                    <p>No publicamos por publicar ni complacemos impulsos. Nos involucramos como tus socios estratégicos para que veas el impacto real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos Intro Teaser Section (Compact Modern Distribution) -->
+    <section id="quienes-somos-intro" class="team-teaser section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-yellow">EL EQUIPO DETRÁS DE KALUPA</span>
+                <h2>UNA SINERGIA ENTRE PUBLICIDAD, INGENIERÍA Y COMPORTAMIENTO HUMANO</h2>
+            </div>
+
+            <div class="team-teaser-grid" style="max-width: 680px; margin: 2rem auto;">
+                <!-- Carolina Card -->
+                <div class="team-clean-card glass-panel highlight-purple">
+                    <div class="team-photo-container">
+                        <img src="assets/carolina.jpg" alt="Carolina - Publicista & Brand Manager" class="team-photo">
+                    </div>
+                    <h3 class="team-clean-name">CAROLINA</h3>
+                    <span class="team-clean-role">Publicista & Brand Manager</span>
+                </div>
+
+                <!-- Matías Card (AI Terminator Tech Avatar) -->
+                <div class="team-clean-card glass-panel highlight-purple">
+                    <div class="team-photo-container">
+                        <img src="assets/matias_ai.jpg" alt="Matías - Software Engineer & Psicólogo Clínico" class="team-photo">
+                    </div>
+                    <h3 class="team-clean-name">MATÍAS</h3>
+                    <span class="team-clean-role">Software Engineer & Psicólogo Clínico</span>
+                </div>
+            </div>
+
+            <div class="team-cta-box text-center mt-3" style="max-width: 680px; margin: 1.5rem auto 0; padding: 1.8rem;">
+                <a href="quienes-somos.html" class="btn btn-purple btn-lg">Conocer Más sobre Quiénes Somos →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contacto" class="contact section-padding bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge badge-yellow">CONTACTO DIRECTO</span>
+                <h2>HABLEMOS DE TU PROYECTO</h2>
+                <p>Conversa directamente con nosotros por WhatsApp o Instagram. Cuéntanos de tu negocio y te ayudaremos a elegir la mejor opción.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Acción Directa -->
+                <div class="contact-action-container glass-panel highlight-purple" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 3rem;">
+                    <span class="badge badge-purple mb-3">RESPUESTA RÁPIDA</span>
+                    <h3 style="margin-bottom: 1rem;">¿LISTO PARA DARLE DIRECCIÓN A TU MARCA?</h3>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted);">Comenzar es simple. Haz clic abajo para chatear directamente con nosotros y conversemos sobre tus objetivos.</p>
+                    <a href="https://wa.me/56946217905?text=Hola%20Kalupa,%20quiero%20conversar%20sobre%20mi%20proyecto" target="_blank" class="btn btn-purple btn-lg btn-whatsapp" style="width: 100%; max-width: 340px;">Hablar por WhatsApp</a>
+                </div>
+
+                <!-- Mapa y Dirección -->
+                <div class="contact-info">
+                    <div class="info-card glass-panel fade-in">
+                        <h3>NUESTRA OFICINA</h3>
+                        <p class="address" style="margin-bottom: 0.5rem;">📍 Montaña 770, Viña del Mar, Valparaíso, Chile</p>
+                        <p class="contact-detail">✉️ <a href="mailto:contacto@kalupa.cl" class="text-link" style="color:var(--text-main);">contacto@kalupa.cl</a></p>
+                    </div>
+
+                    <div class="map-container glass-panel">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.500055113702!2d-71.55648872422941!3d-33.01691287600109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddf3e2e0edc5%3A0xe51deece131005a!2sMonta%C3%B1a%20770%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1700000000000!5m2!1ses-419!2scl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand logo">
+                <img src="assets/logo.svg" alt="Kalupa Logo" class="logo-img" style="height: 40px; margin-bottom: 0.5rem;" onerror="this.style.display='none'">
+                <div class="logo-text-group">
+                    <span class="logo-brand">KALUPA</span>
+                    <span class="logo-descriptor">LABORATORIO DIGITAL</span>
+                </div>
+            </div>
+            <div class="footer-social-group my-2">
+                <a href="https://www.instagram.com/kalupa.agencia" target="_blank" class="btn-instagram" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ig-grad-index" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FFD600"/>
+                                <stop offset="25%" stop-color="#FF0069"/>
+                                <stop offset="50%" stop-color="#D300C5"/>
+                                <stop offset="100%" stop-color="#7638FA"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="url(#ig-grad-index)" stroke-width="2.2" />
+                        <circle cx="12" cy="12" r="4.5" stroke="url(#ig-grad-index)" stroke-width="2.2" />
+                        <circle cx="17.5" cy="6.5" r="1.3" fill="url(#ig-grad-index)" />
+                    </svg>
+                    <span>Instagram (@kalupa.agencia)</span>
+                </a>
+                <a href="https://www.linkedin.com/company/kalupa" target="_blank" class="btn-linkedin" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.65 1.65 0 0 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Kalupa – Laboratorio Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/hero-canvas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

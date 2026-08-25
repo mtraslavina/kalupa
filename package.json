@@ -1,0 +1,12 @@
+{
+  "name": "kalupa-website",
+  "version": "1.0.0",
+  "description": "Sitio web Kalupa Digital",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}
