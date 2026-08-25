@@ -406,7 +406,7 @@ ul {
     font-size: 1.18rem;
     font-weight: 700;
     letter-spacing: -0.04em;
-    color: var(--neutral-white);
+    color: var(--accent-yellow);
     text-transform: uppercase;
     line-height: 1;
     white-space: nowrap;
