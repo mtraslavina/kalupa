@@ -56,7 +56,7 @@
     });
 
     /* ═══════════════════════════════════════════════════════════════════════
-       GLOWING PURPLE DOT SPRITE TEXTURE (#5E17EB & #9E17EB Accent)
+       GLOWING PURPLE DOT SPRITE TEXTURE (#5E17EB & #9E17EB Vivid Accent)
        ═══════════════════════════════════════════════════════════════════════ */
     function createPurpleDotTexture(size) {
         const c = document.createElement('canvas');
@@ -67,10 +67,10 @@
         const radius = size / 2;
 
         const g = ctx.createRadialGradient(center, center, 0, center, center, radius);
-        g.addColorStop(0.0,  'rgba(220, 185, 255, 1.0)');  // Bright lavender-white core
-        g.addColorStop(0.25, 'rgba(158, 23, 235, 0.95)');   // #9E17EB Vivid Purple
-        g.addColorStop(0.55, 'rgba(94, 23, 235, 0.85)');    // #5E17EB Brand Purple
-        g.addColorStop(0.85, 'rgba(94, 23, 235, 0.25)');    // Subtle soft halo
+        g.addColorStop(0.0,  'rgba(245, 235, 255, 1.0)');  // Intense bright white-lavender core
+        g.addColorStop(0.28, 'rgba(180, 70, 255, 1.0)');   // High-luminance vivid purple
+        g.addColorStop(0.62, 'rgba(94, 23, 235, 0.95)');   // Kalupa #5E17EB Brand Purple
+        g.addColorStop(0.88, 'rgba(94, 23, 235, 0.35)');   // Soft glowing outer ring
         g.addColorStop(1.0,  'rgba(0, 0, 0, 0.0)');
 
         ctx.fillStyle = g;
@@ -100,7 +100,7 @@
         renderer.setSize(W, H);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2.0));
         renderer.toneMapping         = THREE.ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.2;
+        renderer.toneMappingExposure = 1.35;
 
         if (renderer.outputColorSpace !== undefined) {
             renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -109,7 +109,7 @@
         }
 
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x05010a); // Deepest dark midnight
+        scene.background = new THREE.Color(0x000000); // Fondo 100% negro puro
 
         const camera = new THREE.PerspectiveCamera(50, W / H, 0.1, 500);
         camera.position.set(0, 0, 24);
@@ -133,7 +133,7 @@
             const visibleWidth  = visibleHeight * camera.aspect;
 
             // Spacing between dots in world units
-            const spacing = isMobile ? 0.95 : 0.85;
+            const spacing = isMobile ? 0.90 : 0.80;
 
             // Add margin around edges so during parallax / waves no edges are visible
             const margin = isMobile ? 8.0 : 12.0;
@@ -154,7 +154,7 @@
             const startX = -((cols - 1) * spacing) / 2;
             const startY = -((rows - 1) * spacing) / 2;
 
-            const brandPurple = new THREE.Color(0x7C3AED);
+            const brandPurple = new THREE.Color(0x8B5CF6);
             const accentPurple = new THREE.Color(0x5E17EB);
 
             let idx = 0;
@@ -169,8 +169,8 @@
                     positions[i3 + 1] = oy;
                     positions[i3 + 2] = oz;
 
-                    alphas[idx] = 0.85;
-                    sizes[idx]  = isMobile ? 0.22 : 0.24; // Crisp dot size
+                    alphas[idx] = 0.95; // Pelotitas más notorias y nítidas
+                    sizes[idx]  = isMobile ? 0.30 : 0.34; // Tamaño más notorio y visible
 
                     const col = (r + c) % 2 === 0 ? brandPurple : accentPurple;
                     colors[i3]     = col.r;
@@ -215,7 +215,7 @@
                     vColor = aColor;
 
                     vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-                    gl_PointSize = clamp(aSize * (280.0 / -mvPosition.z) * uPixelRatio, 2.0, 48.0);
+                    gl_PointSize = clamp(aSize * (340.0 / -mvPosition.z) * uPixelRatio, 2.5, 60.0);
                     gl_Position  = projectionMatrix * mvPosition;
                 }
             `;
@@ -418,7 +418,7 @@
         let time = 0;
         function draw() {
             time += 0.02;
-            ctx.fillStyle = '#05010a';
+            ctx.fillStyle = '#000000';
             ctx.fillRect(0, 0, W, H);
 
             const influence = 120;
@@ -446,10 +446,10 @@
                 d.y += d.vy;
 
                 ctx.beginPath();
-                ctx.arc(d.x, d.y, 2.5, 0, Math.PI * 2);
-                ctx.fillStyle = '#5E17EB';
-                ctx.shadowColor = '#9E17EB';
-                ctx.shadowBlur = 4;
+                ctx.arc(d.x, d.y, 3.2, 0, Math.PI * 2);
+                ctx.fillStyle = '#8B5CF6';
+                ctx.shadowColor = '#5E17EB';
+                ctx.shadowBlur = 6;
                 ctx.fill();
             });
 
