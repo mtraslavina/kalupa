@@ -1422,10 +1422,17 @@ ul {
     margin-top: 1.8rem;
 }
 
-/* Social Footer Buttons (Sutiles y elegantes - solo logos coloreados) */
+.service-overview-card .btn {
+    white-space: nowrap;
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+    letter-spacing: -0.04em;
+}
+
+/* Social Footer Buttons (Sutiles y elegantes - botones circulares sólo con logos) */
 .footer-social-group {
     display: flex;
-    gap: 0.85rem;
+    gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1433,52 +1440,49 @@ ul {
 }
 
 .btn-social, .btn-instagram, .btn-linkedin {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
     color: var(--neutral-white) !important;
     display: inline-flex;
     align-items: center;
-    gap: 0.65rem;
-    font-weight: 600;
-    font-size: 0.88rem;
-    padding: 0.55rem 1.25rem;
-    border-radius: 50px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     text-decoration: none;
     box-shadow: none;
+    padding: 0;
 }
 
 .btn-social svg, .btn-instagram svg, .btn-linkedin svg {
     display: inline-block;
-    vertical-align: middle;
     flex-shrink: 0;
     transition: transform 0.25s ease;
 }
 
 .btn-instagram:hover {
-    background: rgba(220, 39, 67, 0.08);
-    border-color: rgba(220, 39, 67, 0.4);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.15);
-    color: var(--neutral-white) !important;
+    background: rgba(220, 39, 67, 0.12);
+    border-color: rgba(220, 39, 67, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.25);
 }
 
 .btn-instagram:hover svg {
-    transform: scale(1.12);
+    transform: scale(1.15);
 }
 
 .btn-linkedin:hover {
-    background: rgba(10, 102, 194, 0.1);
-    border-color: rgba(10, 102, 194, 0.5);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(10, 102, 194, 0.2);
-    color: var(--neutral-white) !important;
+    background: rgba(10, 102, 194, 0.12);
+    border-color: rgba(10, 102, 194, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(10, 102, 194, 0.25);
 }
 
 .btn-linkedin:hover svg {
-    transform: scale(1.12);
+    transform: scale(1.15);
 }
 
 /* Testimonials / Social Proof Section */
