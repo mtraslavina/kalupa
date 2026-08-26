@@ -1326,6 +1326,28 @@ ul {
     .mobile-hide {
         display: none !important;
     }
+
+    /* Internal Service Banners Mobile (Filtro al 40-50% para ver claramente la imagen en celulares) */
+    .hero-service-banner {
+        min-height: 40vh;
+        padding-top: calc(var(--nav-height) + 1.8rem);
+        padding-bottom: 2.2rem;
+        background-position: center center !important;
+    }
+
+    .hero-service-banner::before {
+        background: linear-gradient(180deg, rgba(10, 0, 24, 0.40) 0%, rgba(10, 0, 24, 0.50) 100%);
+    }
+
+    .hero-service-banner .hero-title {
+        font-size: clamp(1.85rem, 6.2vw, 2.5rem);
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+    }
+
+    .hero-service-banner .hero-subtitle {
+        font-size: 1rem;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    }
 }
 
 /* ==========================================================================
@@ -1383,17 +1405,17 @@ ul {
     line-height: 1.5;
 }
 
-/* Service Hero Banner with Dark Filter Background */
+/* Service Hero Banner with Dark Filter Background (Filtro sutil de 45-55% para máxima claridad de la imagen) */
 .hero-service-banner {
     position: relative;
-    min-height: 52vh;
+    min-height: 48vh;
     display: flex;
     align-items: center;
     overflow: hidden;
     padding-top: calc(var(--nav-height) + 2.5rem);
     padding-bottom: 3rem;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
 }
 
@@ -1404,7 +1426,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(10, 0, 24, 0.85) 0%, rgba(10, 0, 24, 0.96) 100%);
+    background: linear-gradient(180deg, rgba(10, 0, 24, 0.45) 0%, rgba(10, 0, 24, 0.55) 100%);
     z-index: 1;
     pointer-events: none;
 }
@@ -1412,6 +1434,11 @@ ul {
 .hero-service-banner .container {
     position: relative;
     z-index: 2;
+}
+
+.hero-service-banner .hero-title,
+.hero-service-banner .hero-subtitle {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
 }
 
 .action-buttons-row {
